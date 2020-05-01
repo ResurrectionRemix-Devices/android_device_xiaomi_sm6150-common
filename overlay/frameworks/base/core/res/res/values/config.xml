@@ -583,4 +583,10 @@
     that have a HWC implementation that can apply the matrix passed to setColorTransform
     without impacting power, performance, and app compatibility (e.g. protected content). -->
     <bool name="config_nightDisplayAvailable">false</bool>
+
+    <!-- The list of components which should be automatically disabled for a specific device. -->
+    <string-array name="config_deviceDisabledComponents" translatable="false">
+        <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
+        <item>com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService</item>
+    </string-array>
 </resources>
